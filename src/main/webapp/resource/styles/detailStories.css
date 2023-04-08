@@ -1,0 +1,68 @@
+@charset "UTF-8";
+img {
+    height: 350px;
+    width: 100%;
+}
+
+.inputImageThumb {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputImageThumb {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.fileName {
+    background-color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.inputImageThumb:focus + label,
+.inputImageThumb + label:hover {
+    background-color: red;
+
+}
+
+.detail-item-part {
+    margin: 20px 0;
+    display: flex;
+}
+
+/*  Upload image file  */
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}

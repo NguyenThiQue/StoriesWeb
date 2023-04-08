@@ -1,0 +1,211 @@
+@charset "UTF-8";
+  *{
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 font-family:'Poppins', sans-serif;
+  }
+  body{
+	 min-height: 100vh;
+	 min-width: 992px;
+  }
+  header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #B21A42;
+	position: fixed;
+	right: 0;
+	height: 46px;
+	z-index: 1;
+}
+  header img{
+	 border-radius: 20px;
+	 max-width: 100px;
+	 max-height: 100px;
+  }
+  header ul{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+  }
+  header ul li{
+	 list-style: none;
+	 margin-left: 20px;
+  }
+  header ul li a{
+	 text-decoration: none;
+	 padding: 6px;
+	 color: black;
+	 border-radius: 20px; 
+  }
+  header ul li a:hover {
+	 color: white;
+  }
+  header .left ul li input{
+  	border: none;
+  	border-radius: 5px;
+  	padding: 5px;
+  }
+  
+  footer {
+  	position: absolute;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+  }
+  footer ul{
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+  }
+  footer ul li{
+	 list-style: none;
+	 margin-left: 20px;
+  }
+  footer ul li a{
+	 text-decoration: none;
+	 padding: 6px;
+	 color: black;
+	 border-radius: 20px; 
+  }
+  footer ul li a:hover {
+	color: #ff98ab;
+}
+.left ul.sub-menu{
+	position: absolute;
+	padding: 15px 0px;
+	flex-direction: column;
+	width: 200px;
+	background-color: #BB2649;
+	align-items: flex-start;
+}
+.left ul.sub-menu{
+	display: none;
+}
+.left li:hover ul.sub-menu{
+	display: block;
+}
+.left ul.sub-menu a:hover{
+	color: white;
+}
+.right ul.sub-menu{
+	position: absolute;
+	padding: 15px 0px;
+	flex-direction: column;
+	width: 200px;
+	background-color: #BB2649;
+	align-items: flex-start;
+}
+.right ul.sub-menu{
+	display: none;
+}
+.right li:hover ul.sub-menu{
+	display: block;
+}
+.right ul.sub-menu a:hover{
+	color: white;
+}
+.right input{
+  border-radius: 5px;
+  padding: 5px;
+}
+#slider {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	border: 10px solid transparent;
+	padding: 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+#slider > li {
+	width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 15px;
+    font-size: initial;
+    line-height: normal;
+    transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1); /* Slide css animation */
+    background-size: cover;
+    vertical-align: top;
+    box-sizing: border-box;
+    white-space: normal;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

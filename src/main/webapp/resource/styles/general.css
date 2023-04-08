@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*======== Reset CSS ========*/
+ul > li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.delete-part {
+	color: #000000;
+}
+
+.delete-part:hover {
+	color: #bb2649;
+}
+
+:root {
+    --primary-color: #bb2649;
+    --primary-color-dark: #d73d61;
+    --white: #ffffff;
+    /* ===== Palette ====== */
+    --pl-color-1: #BB2649;
+    --pl-color-2: #574143;
+    --pl-color-3: #BFA5A6;
+    --pl-color-4: #007975;
+    --pl-color-5: #00B0A9;
+
+    /* ===== Sub Palette ===== */
+    --sp-color-1: #ffd1e0;
+    --sp-color-2: #D43A5F;
+    --sp-color-3: #D73D61;
+    --sp-color-4: #850025;
+    --sp-color-5: #670010;
+}
+
+.al-center {
+    align-items: center;
+}
+
+.bg-cl-prim {
+    background-color: var(--sp-color-1);
+}
+
+select, .border-input {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+/* .primary-btn-style {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+} */
+
+/* .primary-btn-style:hover {
+    background-color: var(--primary-color-dark);
+    border-color: transparent;
+    color: var(--white);
+} */
+
+/* .header {
+    height: 50px;
+    border: 1px dashed #333;
+} */
+
+/* .btn-orange {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-height: 30px;
+} */
+
+/* .display {
+    display: block;
+} */
+
+/* .non-display {
+    display: none;
+} */
+
+/* .cursor {
+	cursor: pointer;
+} */

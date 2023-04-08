@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*======== Contents ========*/
+.container {
+    padding-top: 50px;
+}
+
+.thumb-image {
+    max-width: 300px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.stories-list {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card-custom {
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    box-shadow: 0 1px 10px 0 rgb(34 34 34 / 8%), 0 4px 5px 0 rgb(34 34 34 / 10%);
+}
+
+.delete-stories {
+    display: flex;
+    width: fit-content;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
